@@ -15,7 +15,6 @@ public class ArrayRange<T extends Number> {
 		}
 		//creo nuovo array per contenere gli elementi compresi tra i due indici
 		int newArrLength = maxIndex - minIndex +1;
-		//fun fact non si può creare un array generic impostando la lunghezza da una varaibile
 		// "Cannot create a generic array of T" quindi l'ho dichiarato object e castato generic
 		@SuppressWarnings("unchecked")
 		T[] newArr = (T[]) new Object[newArrLength];
